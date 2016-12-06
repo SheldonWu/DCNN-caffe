@@ -1,9 +1,7 @@
 # DCNN-caffe
 ## Introduction
-This project is related to CVPR2013: Deep Convolutional Network Cascade for Facial Point Detection. In this paper, it contains 23 Convolution Network in 3 levels. It is a Deep Network which cascade 23 network can detect 5 points. The cascade structure makes this net faster with high accuracy than original VGG net.
-In the first level, it contains 3 net: F1, EN1 and NM1.
-The second level and the third level each contains 10 nets(2 for each point).
-The project is based on the Caffe. Tools are written in Python. Train and Test Data can be found in the Data List.
+This project is related to CVPR2013: [Deep Convolutional Network Cascade for Facial Point Detection](http://www.cv-foundation.org/openaccess/content_cvpr_2013/papers/Sun_Deep_Convolutional_Network_2013_CVPR_paper.pdf). In this paper, it focus on the structural design of individual networks and their combining strategies. 
+Figure 2 is an overview of our approach. There are five facial points to be detected: left eye center (LE), right eye center (RE), nose tip (N), left mouth corner (LM), and right mouth corner (R- M). We cascade three levels of convolutional networks to make coarse-to-fine prediction. At the first level, we em- ploy three deep convolutional networks, F1, EN1, and N- M1, whose input regions cover the whole face (F1), eyes and nose (EN1), nose and mouth (NM1). Each network si
 Have Fun!!!
 ## Dependencies
 * [Caffe](http://caffe.berkeleyvision.org)
