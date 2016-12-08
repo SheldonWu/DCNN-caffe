@@ -16,12 +16,12 @@ The structure of deep convolutional network F1. Sizes of input, convolution, and
 ## What in the folder?
 * personal expression about paper work(Chinese) : a brief introduction and interpretation about the paper
 * Sun_Deep_Convolutional_Network_2013_CVPR_paper
-* tools
-  * cropFace.py : crop 39×39 or 39×31 face from image
-  * cropFaceOrgan : crop 15×15 face organ from image
-  * show_face_key_points.py : check out if cropface is correct yourself
-  * convert_imagelist_2_hdf5.py : make caffe data type
-  * convert_imagelist_2_hdf5_organ.py : make caffe data type
-  * draw_net.py : caffe official tool, show the net work. eg. net.png
+* tools<br>
+  *cropFace.py : crop 39×39 or 39×31 face from image<br>
+  *cropFaceOrgan : crop 15×15 face organ from image<br>
+  *show_face_key_points.py : check out if cropface is correct yourself<br>
+  *convert_imagelist_2_hdf5.py : make caffe data type<br>
+  *convert_imagelist_2_hdf5_organ.py : make caffe data type<br>
+  *draw_net.py : caffe official tool, show the net work. eg. net.png<br>
   
  
