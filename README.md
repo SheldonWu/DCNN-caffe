@@ -14,16 +14,16 @@ The structure of deep convolutional network F1. Sizes of input, convolution, and
 * [opencv 2.4.13](http://opencv.org)
 
 ## What in the folder?
-* personal expression about paper work(Chinese) : a brief introduction and interpretation about the paper
-* Sun_Deep_Convolutional_Network_2013_CVPR_paper
-* tools
+* `personal expression about paper work(Chinese)` : a brief introduction and interpretation about the paper
+* `Sun_Deep_Convolutional_Network_2013_CVPR_paper`
+* `tools`
  * cropFace.py : crop 39×39 or 39×31 face from image
  * cropFaceOrgan.py : crop 15×15 face organ from image
  * show_face_key_points.py : check out if cropface is correct yourself
  * convert_imagelist_2_hdf5.py : make caffe data type
  * convert_imagelist_2_hdf5_organ.py : make caffe data type
  * draw_net.py : caffe official tool, show the net work. eg. net.png
-* test_img 
-* train_img
+* `test_img` 
+* `train_img`
  * org_data_img
  * preprocessed_img : F1 ... RM32 (23 net work)
