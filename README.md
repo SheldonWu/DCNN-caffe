@@ -34,14 +34,14 @@ The structure of deep convolutional network F1. Sizes of input, convolution, and
   Unzip the [train Img](https://pan.baidu.com/s/1bpwxqDT) to the `org_data_img` folder !!!
  
 2. crop the images
-  Open ./DCNN-caffe/tools/cropFace.py , and you need to change `filelist``filelistesave``savePath` in line 83
+  Open `./DCNN-caffe/tools/cropFace.py` , and you need to change `filelist``filelistesave``savePath` in line 83
   This tools will give you [2 imagelist and 2 folder contains size(39×39) images](https://pan.baidu.com/s/1nuYwxuD).
-  Then use show_face_key_points.py to take a look whether these point are correct !!! 
+  Then use `show_face_key_points.py` to take a look whether these point are correct !!! 
   
 3. make caffe data:
   Feature points detection can't use lmdb-datatype, since lmdb only contains 1 label which is used for face detection better. In this project, we use [HDF5](http://www.hdfgroup.org/HDF5/). Use `convert_imagelist_2_hdf5.py` to convert. 
   
-4. Go to ./DCNN-caffe/train_img/preprocessed_img/F1/caffe/ and run `./train.sh`, you will get the caffemodel you want.
+4. Go to `./DCNN-caffe/train_img/preprocessed_img/F1/caffe/` and run `./train.sh`, you will get the caffemodel you want.
 
 ## What if I am lazy to train ???
 Each folder's model folder contains a caffemodel which is I have trained before. The loss(Euclidean) of F1 is about 4, NM1 and EN1 is about 2 and others is about 0.002.
@@ -49,11 +49,11 @@ Each folder's model folder contains a caffemodel which is I have trained before.
 Prepare the [test Image](https://pan.baidu.com/s/1slcrYQL) and ran `calFeaturePts.py` in `test_img` folder you can take a look by yourself.
 
 ## Questions to ask :
-Email: Cong_weilin@qq.com.
+Email: cong_weilin@qq.com.
 
 ## Thanks to:
-Thanks CMCC research Lab for high quality equipments.
+Thanks for CMCC research Lab for high quality equipments.
 
 Thanks for upperclassman's patient for answering my questions.
 
-Thanks my girl friend for understanding me.
+Thanks for my girl friend.
