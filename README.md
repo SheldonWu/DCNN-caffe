@@ -2,12 +2,12 @@
 ## Introduction
 This project is related to CVPR2013: [Deep Convolutional Network Cascade for Facial Point Detection](http://www.cv-foundation.org/openaccess/content_cvpr_2013/papers/Sun_Deep_Convolutional_Network_2013_CVPR_paper.pdf). In this paper, it focus on the structural design of individual networks and their combining strategies.
 
-There are five facial points to be detected: left eye center (LE), right eye center (RE), nose tip (N), left mouth corner (LM), and right mouth corner (RM). The paper cascade three levels of convolutional networks to make coarse-to-fine prediction. At the first level, the paper employ three deep convolutional networks, F1, EN1, and NM1, whose input regions cover the whole face (F1), eyes and nose (EN1), nose and mouth (NM1). Each network simultaneously predicts multiple facial points. 
+There are five facial points to be detected: left eye center (LE), right eye center (RE), nose tip (N), left mouth corner (LM), and right mouth corner (RM). The paper cascade three levels of convolutional networks to make `coarse-to-fine` prediction. At the first level, the paper employ three deep convolutional networks, F1, EN1, and NM1, whose input regions cover the whole face (F1), eyes and nose (EN1), nose and mouth (NM1). Each network simultaneously predicts multiple facial points. 
 
 ## Why Cascade? Why not VGG?
 Speed is importent. VGG is accurate but not fast enough. Everyone would not love to stand in front of the camera for more than 1 second I think. That too stupid!!! This project can detect 40 image/second, and 60+ frame/second in video because no need for level one detection!
 
-Cascade several network is a coarse to fine approach. It split a deep network to several shellow ones and calculate each one stage by stage. Cascade network can fast the speed without lossing accuracy!!!
+Cascade several network is a `Coarse-to-Fine` approach. It split a deep network to several shallow ones and calculate each one stage by stage. Cascade network can fast the speed without lossing accuracy!!!
 
 And this project is a network cascade, not layer cascade !!!
 
@@ -64,4 +64,4 @@ Thanks for CMCC research Lab for high quality equipments.
 
 Thanks for upperclassman's patient for answering my questions.
 
-Thanks for my girl friend.
+Thanks to Guo Lei😘.
