@@ -9,7 +9,7 @@ Speed is importent. VGG is accurate but not fast enough. Everyone would not love
 
 Cascade several network is a `Coarse-to-Fine` approach. It split a deep network to several shallow ones and calculate each one stage by stage. Cascade network can fast the speed without lossing accuracy!!!
 
-And this project is a network cascade, not layer cascade !!!
+And this project is a network cascade, not just layer cascade !!!
 
 
 ## Dependencies
@@ -51,8 +51,8 @@ The structure of deep convolutional network F1. Sizes of input, convolution, and
   
 4. Go to `./DCNN-caffe/train_img/preprocessed_img/F1/caffe/` and run `./train.sh`, you will get the caffemodel you want.
 
-## What if I am lazy to train ???
-Each folder's model folder contains a caffemodel which is I have trained before. The loss(Euclidean) of F1 is about 4, NM1 and EN1 is about 2 and others is about 0.002.
+## What if I am lazy to train ?
+Each folder's `model` contains a `caffemodel` which is I have trained before. The loss(Euclidean) of F1 is about 4, NM1 and EN1 is about 2 and others is about 0.002.
 
 Prepare the [test Image](https://pan.baidu.com/s/1slcrYQL) and ran `calFeaturePts.py` in `test_img` folder you can take a look by yourself.
 
@@ -64,4 +64,4 @@ Thanks for CMCC research Lab for high quality equipments.
 
 Thanks for upperclassman's patient for answering my questions.
 
-Thanks to Guo Lei😘.
+Thanks to Xiao CongCong's NeiNei😘.
