@@ -2,7 +2,7 @@
 ## Introduction
 This project is related to CVPR2013: [Deep Convolutional Network Cascade for Facial Point Detection](http://www.cv-foundation.org/openaccess/content_cvpr_2013/papers/Sun_Deep_Convolutional_Network_2013_CVPR_paper.pdf). In this paper, it focus on the structural design of individual networks and their combining strategies.
 
-Figure 2 is an overview of this approach. There are five facial points to be detected: left eye center (LE), right eye center (RE), nose tip (N), left mouth corner (LM), and right mouth corner (RM). The paper cascade three levels of convolutional networks to make coarse-to-fine prediction. At the first level, the paper employ three deep convolutional networks, F1, EN1, and NM1, whose input regions cover the whole face (F1), eyes and nose (EN1), nose and mouth (NM1). Each network simultaneously predicts multiple facial points. 
+There are five facial points to be detected: left eye center (LE), right eye center (RE), nose tip (N), left mouth corner (LM), and right mouth corner (RM). The paper cascade three levels of convolutional networks to make coarse-to-fine prediction. At the first level, the paper employ three deep convolutional networks, F1, EN1, and NM1, whose input regions cover the whole face (F1), eyes and nose (EN1), nose and mouth (NM1). Each network simultaneously predicts multiple facial points. 
 
 ## Dependencies
 * [Caffe](http://caffe.berkeleyvision.org)
@@ -39,9 +39,9 @@ The structure of deep convolutional network F1. Sizes of input, convolution, and
   Then use show_face_key_points.py to take a look whether these point are correct !!! 
   
 3. make caffe data:
-  Feature points detection can't use lmdb-datatype, since lmdb only contains 1 label which is used for face detection better. In this project, we use [HDF5](http://www.hdfgroup.org/HDF5/). Use convert_imagelist_2_hdf5.py to convert. 
+  Feature points detection can't use lmdb-datatype, since lmdb only contains 1 label which is used for face detection better. In this project, we use [HDF5](http://www.hdfgroup.org/HDF5/). Use `convert_imagelist_2_hdf5.py` to convert. 
   
-4. Go to ./DCNN-caffe/train_img/preprocessed_img/F1/caffe/ and run ./train.sh, you will get the caffemodel you want.
+4. Go to ./DCNN-caffe/train_img/preprocessed_img/F1/caffe/ and run `./train.sh`, you will get the caffemodel you want.
 
 ## What if I am lazy to train ???
 Each folder's model folder contains a caffemodel which is I have trained before. The loss(Euclidean) of F1 is about 4, NM1 and EN1 is about 2 and others is about 0.002.
