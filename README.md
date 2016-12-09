@@ -56,6 +56,8 @@ Each folder's `model` contains a `caffemodel` which is I have trained before. Th
 
 Prepare the [test Image](https://pan.baidu.com/s/1slcrYQL) and ran `calFeaturePts.py` in `test_img` folder you can take a look by yourself.
 
+Result image is as follow:
+![](https://github.com/CongWeilin/DCNN-caffe/blob/master/test_img/result.jpg)
 ## Questions to ask :
 Email: cong_weilin@qq.com.
 
