@@ -1,6 +1,7 @@
 # caffe模型训练、测试步骤
+
 ### 本项目通过级联的方式，通过减少网络深度来达到减少计算量的目的、提高速度的目的。需要训练23个独立的网络，网络可以分为3个层次。
-![](https://github.com/CongWeilin/DCNN-caffe/blob/master/intro_img/intro1.png)
+
 ## 层次1: 
 
 对F1全脸(39×39)，NM1鼻嘴区域(39×31)，EN1眼鼻区域(39×31)的网络.
