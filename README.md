@@ -12,7 +12,7 @@ Cascade several network is a `Coarse-to-Fine` approach. It split a deep network 
 And this project is a network cascade, not just layer cascade !!!
 
 
-## Dependencies
+## Dependences
 * [Caffe](http://caffe.berkeleyvision.org)
 * [python 2.7](https://www.python.org)
 * [opencv 2.4.13](http://opencv.org)
