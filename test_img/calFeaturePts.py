@@ -179,13 +179,13 @@ def calFeaturePoint(img,lt_x,lt_y,rd_x,rd_y):
     level21_pts2 = calOriginalPts(net3(RE21,net_RE21),0.16,pts2)
     level21_pts3 = calOriginalPts(net3(N21 ,net_N21 ),0.16,pts3)
     level21_pts4 = calOriginalPts(net3(LM21,net_LM21),0.16,pts4)
-    level21_pts5 = calOriginalPts(net3(RM21,net_LM21),0.16,pts5)
+    level21_pts5 = calOriginalPts(net3(RM21,net_RM21),0.16,pts5)
     
     level22_pts1 = calOriginalPts(net3(LE22,net_LE22),0.18,pts1)
     level22_pts2 = calOriginalPts(net3(RE22,net_RE22),0.18,pts2)
     level22_pts3 = calOriginalPts(net3(N22 ,net_N22 ),0.18,pts3)
     level22_pts4 = calOriginalPts(net3(LM22,net_LM22),0.18,pts4)
-    level22_pts5 = calOriginalPts(net3(RM22,net_LM22),0.18,pts5)
+    level22_pts5 = calOriginalPts(net3(RM22,net_RM22),0.18,pts5)
      
     #set for level 3 input
     level2_pts1 = ((level21_pts1[0] + level22_pts1[0])/2.0 + (2*pts1[0]-level21_pts1[0] -level22_pts1[0])/2,

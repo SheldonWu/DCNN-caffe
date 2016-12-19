@@ -31,17 +31,7 @@ def convert(source_path,pairlist,savepath,hdf5list,w,h):
         
         points[0]=float(words[1])
         points[1]=float(words[2])
-	'''
-        points[2]=float(words[3])
-        points[3]=float(words[4])
-        points[4]=float(words[5])
-        points[5]=float(words[6])
-	      
-	points[6]=float(words[7])
-        points[7]=float(words[8])
-        points[8]=float(words[9])
-        points[9]=float(words[10])
-        '''
+	
         im=io.imread(source_path+inputimage)
         im=tf.resize(im,(w,h))
         
