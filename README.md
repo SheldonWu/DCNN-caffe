@@ -12,7 +12,7 @@ Cascade several network is a `Coarse-to-Fine` approach. It split a deep network 
 And this project is a network cascade, not just layer cascade !!!
 
 
-## Dependencies
+## Dependences
 * [Caffe](http://caffe.berkeleyvision.org)
 * [python 2.7](https://www.python.org)
 * [opencv 2.4.13](http://opencv.org)
@@ -56,6 +56,8 @@ Each folder's `model` contains a `caffemodel` which is I have trained before. Th
 
 Prepare the [test Image](https://pan.baidu.com/s/1slcrYQL) and ran `calFeaturePts.py` in `test_img` folder you can take a look by yourself.
 
+Result image is as follow:<br>
+![](https://github.com/CongWeilin/DCNN-caffe/blob/master/test_img/result.jpg)
 ## Questions to ask :
 Email: cong_weilin@qq.com.
 
